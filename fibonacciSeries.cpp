@@ -3,7 +3,7 @@
 using namespace std;
 void fibo(int number)
 {
-	if(number>0){
+	if(number>0 && number < 48){
 		int current=1,previous=-1,next=0;
 		for(int i=0;i<number;i++){
 			next = previous+current;
@@ -12,7 +12,7 @@ void fibo(int number)
 			current = next;
 		}
 	}else{
-		cout << "please specify the number which is greater than 0";
+		cout << "Error : Supported Range 1 to 47";
 	}
 }
 int main(int argc,char *argv[])
